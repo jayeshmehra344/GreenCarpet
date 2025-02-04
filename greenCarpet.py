@@ -1,7 +1,7 @@
 from git import Repo
 import os
 
-file_path = "C:\\Users\\Asus\\Desktop\\green-carpet\\Counter.txt"
+file_path = "C:\\Users\\Asus\\Desktop\\GreenCarpet\\Counter.txt"
 
 with open(file_path, "r+") as file:
     text = file.read()
@@ -10,7 +10,7 @@ with open(file_path, "r+") as file:
     file.write(str(num + 1))
     file.truncate()
 
-repo = Repo("C:\\Users\\Asus\\Desktop\\green-carpet\\")
+repo = Repo("C:\\Users\\Asus\\Desktop\\GreenCarpet\\")
 
 repo.git.add("--all")
 repo.index.commit("Update Counter.txt")
