@@ -1,7 +1,7 @@
 from git import Repo
 import os
 
-file_path = "Counter.txt"
+file_path = "D:\\Python-For-Git\\Counter.txt"
 
 with open(file_path, "r+") as file:
     text = file.read()
